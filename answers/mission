@@ -1,0 +1,40 @@
+Mission 1: Display Historical Transactions
+
+Objective:
+The objective of this mission is to create a user interface (UI) that displays historical transactions from a ledger in a logical order, ensuring accuracy and readability.
+
+Approach:
+To achieve this objective, we will follow these steps:
+
+Data Retrieval: Obtain the ledger data from the provided JSON files or an API endpoint.
+Data Processing: Process the ledger data to remove duplicates, sort transactions chronologically, and calculate transaction balances.
+UI Design: Design a user-friendly interface to present the ledger data, including tables and relevant information.
+Display Logic: Implement logic to display the ledger data in a logical order, ensuring proper formatting and readability.
+Testing: Test the UI thoroughly to verify that transactions are displayed accurately and the interface functions as expected.
+Implementation:
+For the implementation, we will use HTML, CSS, and JavaScript to create the UI and handle the data processing and display logic. The HTML will define the structure of the page, CSS will style the elements for a visually appealing interface, and JavaScript will handle the data manipulation and dynamic content generation.
+
+Components:
+
+HTML Structure: Create the basic structure of the page, including headings, tables, and placeholders for displaying ledger data.
+CSS Styling: Apply styles to HTML elements to enhance the visual appearance of the UI, ensuring readability and clarity.
+JavaScript Logic: Implement JavaScript functions to fetch ledger data, process it, and display it in the UI in a logical order.
+Error Handling: Include error handling mechanisms to manage unexpected data or API failures gracefully, ensuring a smooth user experience.
+Testing and Debugging: Test the UI across different browsers and devices to ensure compatibility and responsiveness. Debug any issues that arise during testing.
+Conclusion:
+By following the outlined approach and implementing the necessary components, we will be able to create a functional and user-friendly UI for displaying historical transactions from a ledger. This will provide users with a clear and accurate overview of their investment activities, enhancing their overall experience and satisfaction.
+
+
+Code Doc:
+1. Data Structure: The ledger data is represented as an array of transaction objects, with each object containing details such as activity ID, date, type of transaction, amount, balance, and source/destination information.
+2. Display Functionality: The displayLedger() function is responsible for rendering the ledger data onto an HTML table.
+It clears any existing rows in the table's body to ensure a clean display.
+It then iterates through each transaction in the ledger data, formatting the transaction details into table rows and appending them to the table's body.
+3. Balance Calculation: The calculateBalance() function calculates the balance for each transaction by iterating through the ledger data and updating the balance accordingly.
+For each transaction, it adds the transaction amount to the previous balance to calculate the new balance.
+This ensures that the balance is accurately reflected for each transaction, considering the cumulative effect of previous transactions.
+4. HTML Structure: The HTML structure includes a heading (<h1>) displaying the account balance and date range, and a table (<table>) for displaying the ledger transactions.
+The table has headers (<th>) for Date, Type, Description, Amount, and Balance.
+5. Styling: Basic CSS styles are applied to the HTML elements to improve readability and aesthetics, such as font styles, table borders, and alternating row colors.
+
+This document outlines the process and steps involved in completing Mission 1, focusing on displaying historical transactions accurately and logically within a user interface.
